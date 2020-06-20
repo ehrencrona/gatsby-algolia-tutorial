@@ -1,6 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Search from "./search"
+
+const searchIndices = [
+  { name: `Pages`, title: `Pages` },
+]
 
 const Header = ({ siteTitle }) => (
   <header
@@ -27,6 +32,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Search indices={searchIndices} />
     </div>
   </header>
 )
